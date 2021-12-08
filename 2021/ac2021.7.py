@@ -1,3 +1,4 @@
+#Make this closed form / Also think about dynamic programming methods as well
 with open("ac2021.7.txt") as f:
     poses = [int(x) for x in f.read().split(',')]
 
