@@ -25,12 +25,10 @@ def bfs(board, p, markeds):
     current = set()
     while q:
         top = q.pop()
-        print(top)
         markeds.add(top)
         current.add(top)
         for n in neighbors(board, top[0], top[1]):
             if n not in markeds and n[2] > top[2] and n[2] != 9:
-                print(n)
                 q.append(n)
     return current
     
